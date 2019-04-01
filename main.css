@@ -58,9 +58,35 @@ menu ul li a:after {
     content: "";
     display: inline-block;
     height: 0.8em;
-    /* vertical-align: bottom; */
     width: 100%;
     margin-right: -100%;
     margin-left: 28px;
     border-left: 1px solid black;
+}
+
+/*END MENU - START VISUAL BLOCK*/
+
+.visuel{
+    background-attachment: fixed;
+    background-size: cover;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    background-image: url(img/main.PNG);
+
+}
+.text {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: #2a2829 1px 0 10px;
+    color: white;
+    margin-top: 15%;
+
+}
+.text h1{
+    font-size: 5em;
+    margin: 0;
+}
+.text h2 {
+    font-size: 2em;
 }

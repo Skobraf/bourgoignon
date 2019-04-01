@@ -20,9 +20,21 @@ body ul {
 }
 
 /*MENU*/
+.on-scroll-position {
+    position:fixed;
+}
+.on-scroll-switch {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.on-scroll-button {
+    margin-right: 0;
+}
 nav {
     display: flex;
     justify-content: space-between;
+    background: white;
+    width: 100%;
 }
 menu {
     justify-self: end;

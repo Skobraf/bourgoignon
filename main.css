@@ -80,7 +80,7 @@ menu ul li a:after {
     text-transform: uppercase;
     text-shadow: #2a2829 1px 0 10px;
     color: white;
-    margin-top: 15%;
+    margin-top: 11%;
 
 }
 .text h1{
@@ -89,4 +89,46 @@ menu ul li a:after {
 }
 .text h2 {
     font-size: 2em;
+}
+
+/*END VISEUL BLOCK - START CONTAINER*/
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*FIRST SECTION*/
+.first {
+    text-align: center;
+    justify-content: center;
+    padding-top: 45px;
+}
+
+.first h1, .first h2 {
+    text-transform: uppercase;
+    margin: 0;
+}
+.first h1 {
+    font-size: 2em;
+}
+/*SECOND SECTION*/
+.second {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 350px;
+    background-image: url(img/main.PNG);
+}
+.chaudronnerie {
+    color:white;
+    margin-top: 10%;
+}
+.chaudronnerie h1 {
+    text-transform: uppercase;
+}
+.chaudronnerie h2 {
+    margin-top: 110px;
+    overflow: hidden;
 }

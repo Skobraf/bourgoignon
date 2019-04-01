@@ -36,10 +36,10 @@ nav {
     background: white;
     width: 100%;
 }
-menu {
+#menu {
     justify-self: end;
 }
-menu button {
+.button {
     display: flex;
     margin-left: auto;
     margin-right: 46px;
@@ -53,20 +53,21 @@ menu button {
     font-size: 16px;
     cursor: pointer;
 }
-menu ul {
+#menu ul {
     display: flex;
     margin-right: 24px;
+    padding: 20px 0 15px;
 }
-menu ul li a {
+#menu ul li a {
     height: 100%;
     padding: 10px 20px;
     text-transform: uppercase;
     overflow: hidden;
 }
-menu ul li a:last-child::after {
+#menu ul li a:last-child::after {
     content: none;
 }
-menu ul li a:after {
+#menu ul li a:after {
     content: "";
     display: inline-block;
     height: 0.8em;

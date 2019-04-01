@@ -12,7 +12,7 @@ $(document).ready(function() {
         console.log('top')
         $('#nav').removeClass('on-scroll-position');
         $('#menu').removeClass('on-scroll-switch');
-        $('#button').removeClass('on-scroll-button');
+        $('.button').removeClass('on-scroll-button');
       }
     });
   });

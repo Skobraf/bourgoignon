@@ -363,6 +363,7 @@ section hr {
 /*SEVEN*/
 .seven {
     text-align: center;
+    margin-bottom: 70px;
 }
 .seven h1 {
     text-transform: uppercase;
@@ -392,4 +393,38 @@ i {
 }
 .scroll img{
     padding: 0 50px;
+}
+
+/*FOOTER*/
+
+footer {
+    background:#282828;
+    color: white;
+}
+.main {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 50px;
+}
+.main h2 {
+    font-size: 18px;
+}
+.main p {
+    font-size: 16px;
+}
+.main div {
+    width: 400px;
+}
+.footer {
+    text-align: center;
+    border-top: 1px solid #ffffff59;
+    margin-top: 30px;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1200px;;
+}
+.adress, .logo {
+    border-right: 1px solid #ffffff59;
 }

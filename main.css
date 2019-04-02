@@ -280,7 +280,7 @@ section hr {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    margin: 70px 0;
+    margin: 50px 0;
 }
 .picto {
     width: 200px;
@@ -301,6 +301,7 @@ section hr {
     text-align: center;
     height: 310px;
     background-image: url(img/main.PNG);
+    margin-bottom: 70px;
 }
 .five button{
     position:relative;
@@ -331,10 +332,17 @@ section hr {
     text-transform: uppercase;
 }
 .picto1{
+    color: white;
     position: relative;
     justify-content: center;
     background-size: cover;
     height: 410px;
     width:380px;
     background-image: url(img/tube.PNG);
+}
+.picto1 h2 {
+    position: relative;
+    top: 300px;
+    font-size: 24px;
+    font-weight: lighter;
 }

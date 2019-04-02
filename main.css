@@ -98,7 +98,7 @@ nav {
 }
 #menu ul li a {
     height: 100%;
-    padding: 10px 20px;
+    padding: 10px;
     text-transform: uppercase;
     overflow: hidden;
 }
@@ -320,4 +320,21 @@ section hr {
     margin-top: 0;
     font-size: 22px;
     font-weight: bold;
+}
+
+/*SIXTH*/
+.six {
+    text-align: center;
+    width: 1240px;
+}
+.six h1 {
+    text-transform: uppercase;
+}
+.picto1{
+    position: relative;
+    justify-content: center;
+    background-size: cover;
+    height: 410px;
+    width:380px;
+    background-image: url(img/tube.PNG);
 }

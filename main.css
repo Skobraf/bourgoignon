@@ -17,6 +17,12 @@ body {
   letter-spacing: 5px;
   font-size: 16px;
 }
+h2 {
+    letter-spacing: 2px;
+}
+p {
+    letter-spacing: 1px;
+}
 a {
   display: block;
   text-decoration: none;
@@ -25,6 +31,14 @@ a {
 body ul {
   list-style: none;
 }
+.link-spanner{ 
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 1;
+  }
 
 /*MENU*/
 .on-scroll-position {
@@ -109,13 +123,21 @@ nav {
 }
 .text h2 {
     font-size: 2em;
+    margin-top: 0;
 }
 
 /*END VISEUL BLOCK - START CONTAINER*/
 
 section {
-    max-width: 1200px;
+    max-width: 1420px;
     margin: 0 auto;
+}
+section hr {
+   size:5px;
+   height: 5px;
+   width: 55px;
+    background:white;
+
 }
 /*FIRST SECTION*/
 .first {
@@ -138,41 +160,76 @@ section {
     text-align: center;
     background-attachment: fixed;
     background-size: cover;
-    height: 350px;
+    height: 360px;
     background-image: url(img/main.PNG);
 }
 .chaudronnerie {
     color:white;
-    margin-top: 10%;
+    margin-top: 110px;
 }
 .chaudronnerie h1 {
     text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-shadow: #2a2829 1px 0 10px;
 }
 .chaudronnerie h2 {
     margin-top: 110px;
     overflow: hidden;
+    font-size: 16px;
+    text-shadow: #2a2829 1px 0 10px;
 }
 /*THIRD SECTION*/
 .third {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    margin-top: 25px;
+    color: white;
 }
 .pre {
+    position: relative;
     justify-content: center;
     background-size: cover;
-    height: 300px;
+    height: 410px;
+    width:520px;
     background-image: url(img/main.PNG);
+    
+}
+.pre h1, .deux h1, .trois h1{
+    margin-top: 200px;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-shadow: #2a2829 1px 0 10px;
+}
+.pre h2, .deux h2, .trois h2{
+    margin-top: 100px;
+    font-size: 16px;
+    text-shadow: #2a2829 1px 0 10px;
+}
+.dash hr {
+    position: relative;
+    left: 139px;
+    bottom: 22px;
+    background: red;
+    height: 3px;
+    border: none;
+    width: 23px;
 }
 .deux {
+    position: relative;
     justify-content: center;
     background-size: cover;
-    height: 300px;
+    height: 410px;
+    width:520px;
     background-image: url(img/main.PNG);
 }
 .trois {
+    position: relative;
     justify-content: center;
     background-size: cover;
-    height: 300px;
+    height: 410px;
+    width:340px;
     background-image: url(img/main.PNG);
 }

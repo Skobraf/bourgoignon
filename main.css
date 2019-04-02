@@ -187,6 +187,7 @@ section hr {
 }
 /*SECOND SECTION*/
 .second {
+    color: white;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -194,15 +195,27 @@ section hr {
     height: 360px;
     background-image: url(img/main.PNG);
 }
+.second:hover{
+    opacity: 0.3;
+    transition: .5s ease;
+    color: black;
+}
+.second:hover > .chaudronnerie h1 {
+    text-shadow: none;
+}
+.second:hover > .chaudronnerie h2 {
+    text-shadow: none;
+}
 .chaudronnerie {
-    color:white;
     margin-top: 110px;
+    
 }
 .chaudronnerie h1 {
     text-transform: uppercase;
     font-size: 30px;
     margin-bottom: 15px;
     text-shadow: #2a2829 1px 0 10px;
+    z-index: 1;
 }
 .chaudronnerie h2 {
     margin-top: 110px;
@@ -226,6 +239,14 @@ section hr {
     width:520px;
     background-image: url(img/main.PNG);
     
+}
+.pre:hover {
+    opacity: 0.3;
+    transition: .5s ease;
+    color: black;
+}
+.pre:hover > h1{
+    text-shadow: none;
 }
 .pre h1, .deux h1, .trois h1{
     margin-top: 200px;
@@ -273,6 +294,8 @@ section hr {
     margin-bottom: 70px;
 }
  .btn {
+    margin: 0 auto;
+    width: 400px;
     height: 50px;
     background-color: #ef1615;
     text-transform: uppercase;
@@ -316,7 +339,7 @@ section hr {
     background-image: url(img/main.PNG);
     margin-bottom: 70px;
 }
-.five button{
+.five .btn{
     position:relative;
     top: 140px;
 }

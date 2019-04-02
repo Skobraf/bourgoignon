@@ -9,6 +9,13 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family:'Roboto';
+    src: url('fonts/RobotoCondensed-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 body {
   padding: 0;
@@ -21,6 +28,7 @@ h2 {
     letter-spacing: 2px;
 }
 p {
+    font-family: Roboto;
     letter-spacing: 1px;
 }
 a {
@@ -39,7 +47,12 @@ body ul {
     left: 0;
     z-index: 1;
   }
-
+.hr {
+   height: 3px;
+   width: 50px;
+   background:red;
+   border: none;
+}
 /*MENU*/
 .on-scroll-position {
     position:fixed;
@@ -57,6 +70,8 @@ nav {
     justify-content: space-between;
     background: white;
     width: 100%;
+    font-size: 16px;
+    font-weight: bold;
 }
 #menu {
     justify-self: end;
@@ -136,7 +151,7 @@ section hr {
    size:5px;
    height: 5px;
    width: 55px;
-    background:white;
+   background:white;
 
 }
 /*FIRST SECTION*/
@@ -232,4 +247,43 @@ section hr {
     height: 410px;
     width:340px;
     background-image: url(img/main.PNG);
+}
+
+
+/*END OF THIRD PART / BEGUIN FOURTH*/
+
+.fourth {
+    text-align: center;
+}
+ .btn {
+    height: 50px;
+    background-color: #ef1615;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    padding: 10px 42px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.fourth h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.pictos {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 70px 0;
+}
+.picto {
+    width: 200px;
+}
+.picto h2 {
+    font-size: 18px;
+}
+.picto p {
+    font-size: 16px;
 }

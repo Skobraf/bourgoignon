@@ -195,19 +195,31 @@ section hr {
     height: 360px;
     background-image: url(img/main.PNG);
 }
-.second:hover{
-    opacity: 0.3;
+.second:hover:before{
+    content: "";
+    display: block;
+    width: 1420px;
+    height: 359px;
+    background: #ffffff;
+    position: absolute;
+    top: 899px;
+    left: 241px;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
     transition: .5s ease;
-    color: black;
 }
 .second:hover > .chaudronnerie h1 {
+    color: black;
     text-shadow: none;
 }
 .second:hover > .chaudronnerie h2 {
+    color: black;
     text-shadow: none;
 }
 .chaudronnerie {
     margin-top: 110px;
+    z-index: 1;
     
 }
 .chaudronnerie h1 {

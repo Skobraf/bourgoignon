@@ -15,8 +15,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-
 body {
   padding: 0;
   margin: 0;
@@ -59,10 +57,6 @@ body ul {
     flex-direction: row-reverse;
     margin-top: 20px;
 }
-.on-scroll-button {
-    margin-right: 0;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -73,13 +67,10 @@ nav {
     position:fixed;
     z-index: 2;
 }
-#menu {
-    justify-self: end;
-}
-#button {
+.button {
     display: flex;
-    margin: 10px 46px 0 auto;
-    width: 238px;
+    margin: 10px 35px 0 auto;
+    width: 280px;
     height: 50px;
     background-color: #ef1615;
     text-transform: uppercase;
@@ -91,27 +82,25 @@ nav {
     font-weight: bold;
     cursor: pointer;
 }
-#menu ul {
+.menu ul {
     display: flex;
     margin-right: 22px;
 }
 
-#menu ul li a {
+.menu ul li a {
     height: 100%;
     padding: 10px;
     text-transform: uppercase;
     overflow: hidden;
 }
-#menu ul li a:last-child::after {
+.menu ul li a:last-child::after {
     content: none;
 }
-#menu ul li a:after {
+.menu ul li a:after {
     content: "";
-    display: inline-block;
     height: 0.8em;
     width: 100%;
-    margin-right: -100%;
-    margin-left: 28px;
+    margin-left: 12px;
     border-left: 1px solid black;
 }
 
@@ -124,6 +113,11 @@ nav {
     justify-content: center;
     background-image: url(img/main.PNG);
 }
+.visual hr {
+    width: 120px;
+    height: 6px;
+    background:white;
+}
 .visuel:before {
     content: "";
     display: block;
@@ -135,14 +129,22 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.4;
+    opacity: 0.1;
     z-index: 1;
 }
 .text {
-    text-align: center;
-    text-shadow: #2a2829 1px 0 10px;
     color: white;
-    margin-top: 11%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     z-index: 1;
 
 }
@@ -358,4 +360,36 @@ section hr {
     font-weight: lighter;
 }
 
-/*Seven*/
+/*SEVEN*/
+.seven {
+    text-align: center;
+}
+.seven h1 {
+    text-transform: uppercase;
+}
+.seven p {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+.right {
+    position: relative;
+    bottom: 50px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+.left {
+    position: relative;
+    bottom: 50px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.scroll img{
+    padding: 0 50px;
+}

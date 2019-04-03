@@ -1,0 +1,30 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    position:fixed;
+    z-index: 2;
+    .button {
+        display: flex;
+        margin: 10px 35px 0 auto;
+        width: 280px;
+        height: 50px;
+        background-color: $btn_color;
+        text-transform: uppercase;
+        border: none;
+        color: white;
+        padding: 10px 42px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+.on-scroll-switch {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+}

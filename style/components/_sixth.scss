@@ -1,0 +1,23 @@
+.six {
+    text-align: center;
+    width: 1240px;
+    h1 {
+        text-transform: uppercase;
+    }
+}
+
+.picto1{
+    color: white;
+    position: relative;
+    justify-content: center;
+    background-size: cover;
+    height: 410px;
+    width:380px;
+    background-image: url(img/tube.PNG);
+    h2 {
+        position: relative;
+        top: 300px;
+        font-size: 24px;
+        font-weight: lighter;
+    }
+}

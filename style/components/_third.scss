@@ -1,0 +1,74 @@
+@mixin transformH1 {
+    margin-top: 200px;
+    text-transform: uppercase;
+    font-size: $m-size;
+    margin-bottom: 15px;
+    text-shadow: $shadow;
+}
+@mixin transfromH2 {
+    margin-top: 100px;
+    font-size: $s-size;
+    text-shadow: $shadow;
+}
+@mixin importImage {
+    position: relative;
+    justify-content: center;
+    background-size: cover;
+    height: 410px;
+    width:340px;
+}
+.third {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 25px;
+    color: $section_color;
+}
+.pre {
+    @include importImage();
+    background-image: url(img/main.PNG);
+    h1 {
+        @include transformH1();
+    }
+    h2 {
+        @include transfromH2();
+    }
+    &:hover {
+        opacity: 0.3;
+        transition: .5s ease;
+        color: black;
+    }
+    &:hover > h1{
+        text-shadow: none;
+    }
+    
+}
+.dash hr {
+    position: relative;
+    left: 139px;
+    bottom: 22px;
+    background: red;
+    height: 3px;
+    border: none;
+    width: 23px;
+}
+.deux {
+    @include importImage();
+    background-image: url(img/main.PNG);
+    h1 {
+        @include transformH1();
+    }
+    h2 {
+        @include transfromH2();
+    }
+}
+.trois {
+    @include importImage();
+    background-image: url(img/main.PNG);
+    h1 {
+        @include transformH1();
+    }
+    h2 {
+        @include transfromH2();
+    }
+}

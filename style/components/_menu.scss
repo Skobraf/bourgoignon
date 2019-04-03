@@ -1,0 +1,21 @@
+.menu ul {
+    display: flex;
+    margin-right: 22px;
+}
+
+.menu ul li a {
+    height: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.menu ul li a:last-child::after {
+    content: none;
+}
+.menu ul li a:after {
+    content: "";
+    height: 0.8em;
+    width: 100%;
+    margin-left: 12px;
+    border-left: 1px solid black;
+}

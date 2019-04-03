@@ -17,6 +17,21 @@
     height: 410px;
     width:340px;
 }
+@mixin hoverElement {
+    content: "";
+    display: block;
+    width: 340px;
+    height: 410px;
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+}
 .third {
     display: flex;
     justify-content: space-between;
@@ -27,18 +42,26 @@
 .pre {
     @include importImage();
     background-image: url(img/main.PNG);
-    h1 {
-        @include transformH1();
-    }
-    h2 {
-        @include transfromH2();
+    .hover {
+        position: relative;
+        z-index: 1;
+        h1 {
+            @include transformH1();
+        }
+        h2 {
+            @include transfromH2();
+        }
     }
     &:hover {
-        opacity: 0.3;
-        transition: .5s ease;
         color: black;
     }
-    &:hover > h1{
+    &:hover::before {
+       @include hoverElement();
+    }
+    &:hover > .hover h1{
+        text-shadow: none;
+    }
+    &:hover > .hover h2{
         text-shadow: none;
     }
     
@@ -55,20 +78,52 @@
 .deux {
     @include importImage();
     background-image: url(img/main.PNG);
-    h1 {
-        @include transformH1();
+    .hover {
+        position: relative;
+        z-index: 1;
+        h1 {
+            @include transformH1();
+        }
+        h2 {
+            @include transfromH2();
+        }
     }
-    h2 {
-        @include transfromH2();
+    &:hover {
+        color: black;
+    }
+    &:hover::before {
+       @include hoverElement();
+    }
+    &:hover > .hover h1{
+        text-shadow: none;
+    }
+    &:hover > .hover h2{
+        text-shadow: none;
     }
 }
 .trois {
     @include importImage();
     background-image: url(img/main.PNG);
-    h1 {
-        @include transformH1();
+    .hover {
+        position: relative;
+        z-index: 1;
+        h1 {
+            @include transformH1();
+        }
+        h2 {
+            @include transfromH2();
+        }
     }
-    h2 {
-        @include transfromH2();
+    &:hover {
+        color: black;
+    }
+    &:hover::before {
+       @include hoverElement();
+    }
+    &:hover > .hover h1{
+        text-shadow: none;
+    }
+    &:hover > .hover h2{
+        text-shadow: none;
     }
 }

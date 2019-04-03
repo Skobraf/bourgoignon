@@ -1,5 +1,20 @@
+@mixin hoverSection {
+    content: "";
+    display: block;
+    width: 1420px;
+    height: 359px;
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    transition: .5s ease;
+}
 .second {
     color: $section_color;
+    position: relative;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -7,18 +22,7 @@
     height: 360px;
     background-image: url(img/main.PNG);
     &:hover::before {
-        content: "";
-        display: block;
-        width: 1420px;
-        height: 359px;
-        background: #ffffff;
-        position: absolute;
-        top: 899px;
-        left: 241px;
-        right: 0;
-        bottom: 0;
-        opacity: 0.5;
-        transition: .5s ease;
+     @include hoverSection();
     }
 }
 .second:hover > .chaudronnerie h1 {
@@ -37,7 +41,6 @@
         font-size: 30px;
         margin-bottom: 15px;
         text-shadow: $shadow;
-        z-index: 1;
     }
     h2 {
         margin-top: 110px;

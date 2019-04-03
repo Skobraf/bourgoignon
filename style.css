@@ -225,6 +225,7 @@ hr {
 
 .second {
   color: white;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,8 +245,8 @@ hr {
   height: 359px;
   background: #ffffff;
   position: absolute;
-  top: 899px;
-  left: 241px;
+  top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
   opacity: 0.5;
@@ -273,7 +274,6 @@ hr {
   font-size: 30px;
   margin-bottom: 15px;
   text-shadow: #2a2829 1px 0 10px;
-  z-index: 1;
 }
 
 .chaudronnerie h2 {
@@ -306,7 +306,12 @@ hr {
   background-image: url(img/main.PNG);
 }
 
-.pre h1 {
+.pre .hover {
+  position: relative;
+  z-index: 1;
+}
+
+.pre .hover h1 {
   margin-top: 200px;
   text-transform: uppercase;
   font-size: 30px;
@@ -314,20 +319,37 @@ hr {
   text-shadow: #2a2829 1px 0 10px;
 }
 
-.pre h2 {
+.pre .hover h2 {
   margin-top: 100px;
   font-size: 16px;
   text-shadow: #2a2829 1px 0 10px;
 }
 
 .pre:hover {
-  opacity: 0.3;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
   color: black;
 }
 
-.pre:hover > h1 {
+.pre:hover::before {
+  content: "";
+  display: block;
+  width: 340px;
+  height: 410px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.pre:hover > .hover h1 {
+  text-shadow: none;
+}
+
+.pre:hover > .hover h2 {
   text-shadow: none;
 }
 
@@ -352,7 +374,12 @@ hr {
   background-image: url(img/main.PNG);
 }
 
-.deux h1 {
+.deux .hover {
+  position: relative;
+  z-index: 1;
+}
+
+.deux .hover h1 {
   margin-top: 200px;
   text-transform: uppercase;
   font-size: 30px;
@@ -360,10 +387,38 @@ hr {
   text-shadow: #2a2829 1px 0 10px;
 }
 
-.deux h2 {
+.deux .hover h2 {
   margin-top: 100px;
   font-size: 16px;
   text-shadow: #2a2829 1px 0 10px;
+}
+
+.deux:hover {
+  color: black;
+}
+
+.deux:hover::before {
+  content: "";
+  display: block;
+  width: 340px;
+  height: 410px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.deux:hover > .hover h1 {
+  text-shadow: none;
+}
+
+.deux:hover > .hover h2 {
+  text-shadow: none;
 }
 
 .trois {
@@ -377,7 +432,12 @@ hr {
   background-image: url(img/main.PNG);
 }
 
-.trois h1 {
+.trois .hover {
+  position: relative;
+  z-index: 1;
+}
+
+.trois .hover h1 {
   margin-top: 200px;
   text-transform: uppercase;
   font-size: 30px;
@@ -385,10 +445,38 @@ hr {
   text-shadow: #2a2829 1px 0 10px;
 }
 
-.trois h2 {
+.trois .hover h2 {
   margin-top: 100px;
   font-size: 16px;
   text-shadow: #2a2829 1px 0 10px;
+}
+
+.trois:hover {
+  color: black;
+}
+
+.trois:hover::before {
+  content: "";
+  display: block;
+  width: 340px;
+  height: 410px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.trois:hover > .hover h1 {
+  text-shadow: none;
+}
+
+.trois:hover > .hover h2 {
+  text-shadow: none;
 }
 
 .fourth {

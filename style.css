@@ -585,6 +585,27 @@ hr {
   top: 300px;
   font-size: 24px;
   font-weight: lighter;
+  z-index: 1;
+}
+
+.picto1:hover::before {
+  content: "";
+  display: block;
+  width: 380px;
+  height: 410px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.picto1:hover > h2 {
+  color: black;
 }
 
 .seven {

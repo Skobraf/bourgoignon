@@ -254,6 +254,10 @@ hr {
   transition: .5s ease;
 }
 
+.second:hover > .chaudronnerie .tire {
+  background-color: black;
+}
+
 .second:hover > .chaudronnerie h1 {
   color: black;
   text-shadow: none;
@@ -302,7 +306,7 @@ hr {
           justify-content: center;
   background-size: cover;
   height: 410px;
-  width: 340px;
+  width: 520px;
   background-image: url(img/main.PNG);
 }
 
@@ -332,7 +336,7 @@ hr {
 .pre:hover::before {
   content: "";
   display: block;
-  width: 340px;
+  width: 520px;
   height: 410px;
   background: #ffffff;
   position: absolute;
@@ -370,7 +374,7 @@ hr {
           justify-content: center;
   background-size: cover;
   height: 410px;
-  width: 340px;
+  width: 520px;
   background-image: url(img/main.PNG);
 }
 
@@ -400,7 +404,7 @@ hr {
 .deux:hover::before {
   content: "";
   display: block;
-  width: 340px;
+  width: 520px;
   height: 410px;
   background: #ffffff;
   position: absolute;

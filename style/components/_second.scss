@@ -24,6 +24,9 @@
     &:hover::before {
      @include hoverSection();
     }
+    &:hover > .chaudronnerie .tire {
+        background-color: black;
+    }
 }
 .second:hover > .chaudronnerie h1 {
     color: black;

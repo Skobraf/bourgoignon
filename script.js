@@ -1,7 +1,7 @@
 $(document).ready(function() {
   
     $(window).scroll(function () {
-      console.log($(window).scrollTop())
+      //console.log($(window).scrollTop())
       if ($(window).scrollTop() > 0) {
         console.log('buttom');
         $('#nav').addClass('on-scroll-position');
